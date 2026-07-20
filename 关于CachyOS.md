@@ -141,7 +141,7 @@ zoxide init fish | source
 
 ## 游戏
 ### GameMode
-[GameMode](https://github.com/FeralInteractive/gamemode)是一个 Linux 下的守护进程和库组合，允许游戏请求一组优化暂时应用于主机操作系统或游戏进程
+[GameMode](https://github.com/FeralInteractive/gamemode)是一个Linux下的守护进程和库组合，允许游戏请求一组优化暂时应用于主机操作系统或游戏进程
 1. 安装：
 ```bash
 sudo pacman -S --needed gamemode lib32-gamemode
