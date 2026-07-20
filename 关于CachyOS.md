@@ -36,7 +36,8 @@ LC_ALL=C.UTF-8 xdg-user-dirs-update --force
 Arch Linux中文社区仓库是由Arch Linux中文社区驱动的非官方用户仓库
 包含许多官方仓库未提供的额外的软件包，以及已有软件的git版本等变种
 一部分软件包的打包脚本来源于AUR，但也有许多包与AUR不一样
-这里用的是科大源，对于我来说下载速度快点。你可以根据自身情况设置其他镜像源
+这里用的是科大源，对于我来说下载速度快点
+你可以根据自身情况设置其他镜像源
 ```bash
 printf '%s' '[archlinuxcn]
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
@@ -90,7 +91,8 @@ sudo pacman -S fcitx5-im fcitx5-rime
 git clone --depth 1 https://github.com/gaboolic/rime-frost Rime
 cp -r Rime/* ~/.local/share/fcitx5/rime
 ```
-4. 重新部署：按`Ctrl`+空格键切换输入法，右键im图标，打开“朙月拼音”的菜单。点击重新部署即可
+4. 重新部署：按`Ctrl`+空格键切换输入法，右键im图标，打开“朙月拼音”的菜单
+点击重新部署即可
 5. 美化主题：
 ```bash
 git clone https://github.com/sanweiya/fcitx5-mellow-themes.git
@@ -135,4 +137,16 @@ set -gx EDITOR micro
 
 # zoxide
 zoxide init fish | source
+```
+
+## 游戏
+### GameMode
+[GameMode](https://github.com/FeralInteractive/gamemode)是一个 Linux 下的守护进程和库组合，允许游戏请求一组优化暂时应用于主机操作系统或游戏进程
+1. 安装：
+```bash
+sudo pacman -S --needed gamemode lib32-gamemode
+```
+2. 配置：
+```bash
+sudo gpasswd -a curarpikt gamemode
 ```
